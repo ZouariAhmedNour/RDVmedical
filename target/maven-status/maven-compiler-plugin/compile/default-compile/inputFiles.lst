@@ -2,3 +2,7 @@ D:\RdvMedical\src\main\java\com\app\rdvmedical\entities\Medecin.java
 D:\RdvMedical\src\main\java\com\app\rdvmedical\entities\Patient.java
 D:\RdvMedical\src\main\java\com\app\rdvmedical\entities\Rdv.java
 D:\RdvMedical\src\main\java\com\app\rdvmedical\RdvMedicalApplication.java
+D:\RdvMedical\src\main\java\com\app\rdvmedical\repository\MedecinRepository.java
+D:\RdvMedical\src\main\java\com\app\rdvmedical\repository\PatientRepository.java
+D:\RdvMedical\src\main\java\com\app\rdvmedical\repository\RdvRepository.java
+D:\RdvMedical\src\main\java\com\app\rdvmedical\service\IServiceRdv.java

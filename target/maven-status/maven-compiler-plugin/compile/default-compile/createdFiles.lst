@@ -1,4 +1,8 @@
+com\app\rdvmedical\service\IServiceRdv.class
+com\app\rdvmedical\repository\MedecinRepository.class
 com\app\rdvmedical\entities\Patient.class
 com\app\rdvmedical\entities\Medecin.class
+com\app\rdvmedical\repository\PatientRepository.class
+com\app\rdvmedical\repository\RdvRepository.class
 com\app\rdvmedical\entities\Rdv.class
 com\app\rdvmedical\RdvMedicalApplication.class

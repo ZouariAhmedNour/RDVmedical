@@ -1,13 +1,12 @@
 package com.app.rdvmedical.service;
 
+import com.app.rdvmedical.entities.Rdv;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public interface IServiceRdv {
-    void saveRdv();
-    void updateRdv();
-    void deleteRdv();
-    void getAllRdv(Long id);
-    void getRdvById(Long id);
-    void creerRdv();
+    List<Rdv> getAllRdv();
+    Rdv creerRdv(Rdv rdv);
 }
