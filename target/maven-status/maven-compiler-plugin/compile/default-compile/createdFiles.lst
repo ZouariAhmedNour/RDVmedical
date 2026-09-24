@@ -1,0 +1,4 @@
+com\app\rdvmedical\entities\Patient.class
+com\app\rdvmedical\entities\Medecin.class
+com\app\rdvmedical\entities\Rdv.class
+com\app\rdvmedical\RdvMedicalApplication.class
