@@ -14,12 +14,13 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class Medecin {
+public class Patient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
     String nom;
     String prenom;
-    String specialite;
-    String adresse;
+    int age;
+    int tel;
+
 }
