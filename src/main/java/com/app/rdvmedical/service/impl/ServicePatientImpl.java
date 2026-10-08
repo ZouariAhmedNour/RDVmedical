@@ -17,11 +17,11 @@ public class ServicePatientImpl implements IServicePatient {
 
     @Override
     public List<Patient> getAllPatient() {
-        return List.of();
+        return patientRepository.findAll();
     }
 
     @Override
     public Patient creerPatient(Patient patient) {
-        return null;
+        return patientRepository.save(patient);
     }
 }

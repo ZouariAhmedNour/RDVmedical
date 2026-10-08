@@ -54,6 +54,16 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!--  =====================================================  -->
+        <!--  SWAGGER / OPENAPI  -->
+        <!--  =====================================================  -->
+        <!--  Version 3.x require pour la compatibility Spring Boot 4 / Spring Framework 7
+                     (la ligne 2.x de springdoc ne support que Spring Boot 3.x)  -->
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>3.0.3</version>
+        </dependency>
     </dependencies>
 
 	<build>
