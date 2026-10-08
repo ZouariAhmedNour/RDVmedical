@@ -13,22 +13,17 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class Patient {
+public class Maladie {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @Column(unique = true, nullable = false)
     private String nom;
-    private String prenom;
-    private int age;
-    private int tel;
 
-    @ManyToMany
-    @JoinTable(
-            name = "patient_maladie",
-            joinColumns = @JoinColumn(name = "patient_id"),
-            inverseJoinColumns = @JoinColumn(name = "maladie_id")
-    )
-    private List<Maladie> maladies;
+    private String description;
+
+    @ManyToMany(mappedBy = "maladies")
+    private List<Patient> patients;
 }
