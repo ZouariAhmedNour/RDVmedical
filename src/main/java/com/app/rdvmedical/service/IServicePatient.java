@@ -1,10 +1,16 @@
 package com.app.rdvmedical.service;
 
-import com.app.rdvmedical.entities.Patient;
+import com.app.rdvmedical.dto.PatientDTO;
 
 import java.util.List;
 
 public interface IServicePatient {
-   List<Patient> getAllPatient();
-   Patient creerPatient(Patient patient);
+
+    PatientDTO addPatient(PatientDTO dto);
+
+    List<PatientDTO> getAllPatients();
+
+    PatientDTO getPatientById(int id);
+
+    PatientDTO addMaladieToPatient(int patientId, int maladieId);
 }

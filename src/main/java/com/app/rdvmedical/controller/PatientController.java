@@ -1,29 +1,39 @@
 package com.app.rdvmedical.controller;
 
-import com.app.rdvmedical.entities.Patient;
+import com.app.rdvmedical.dto.PatientDTO;
 import com.app.rdvmedical.service.IServicePatient;
 import lombok.AllArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/patient")
 @AllArgsConstructor
 public class PatientController {
 
-    IServicePatient servicePatient;
+    private IServicePatient servicePatient;
 
-    @GetMapping("getAll")
-    public Iterable<Patient> getAllPatient() {
-        return servicePatient.getAllPatient();
+    @GetMapping("/getAll")
+    public List<PatientDTO> getAllPatient() {
+        return servicePatient.getAllPatients();
     }
 
-    @PostMapping("add")
-    public Patient creerPatient(@RequestBody Patient patient) {
-        return servicePatient.creerPatient(patient);
+    @PostMapping("/add")
+    public PatientDTO creerPatient(@RequestBody PatientDTO patientDTO) {
+        return servicePatient.addPatient(patientDTO);
+    }
+
+    @GetMapping("/getById/{id}")
+    public PatientDTO getPatientById(@PathVariable int id) {
+        return servicePatient.getPatientById(id);
+    }
+
+    @PostMapping("/{patientId}/maladie/{maladieId}")
+    public PatientDTO addMaladieToPatient(
+            @PathVariable int patientId,
+            @PathVariable int maladieId
+    ) {
+        return servicePatient.addMaladieToPatient(patientId, maladieId);
     }
 }
-

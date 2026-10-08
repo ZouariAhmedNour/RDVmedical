@@ -7,8 +7,15 @@ com\app\rdvmedical\repository\PatientRepository.class
 com\app\rdvmedical\service\impl\ServicePatientImpl.class
 com\app\rdvmedical\repository\RdvRepository.class
 com\app\rdvmedical\RdvMedicalApplication.class
+com\app\rdvmedical\dto\PatientDTO.class
 com\app\rdvmedical\service\IServicePatient.class
 com\app\rdvmedical\service\IServiceRdv.class
+com\app\rdvmedical\repository\MaladieRepository.class
 com\app\rdvmedical\controller\PatientController.class
 com\app\rdvmedical\service\impl\ServiceRdvImpl.class
+com\app\rdvmedical\controller\MaladieController.class
+com\app\rdvmedical\service\impl\ServiceMaladieImpl.class
+com\app\rdvmedical\entities\Maladie.class
 com\app\rdvmedical\entities\Rdv.class
+com\app\rdvmedical\service\IServiceMaladie.class
+com\app\rdvmedical\mapper\PatientMapper.class
